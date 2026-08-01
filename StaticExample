@@ -1,0 +1,14 @@
+public class Ex {
+int x =30;
+static int y = 20;
+
+public static void main(String[] args) {
+	Ex t1 = new Ex();
+	t1.x = 88;
+	t1.y = 99;
+	int z = t1.x + t1.y;
+	Ex t2 = new Ex();
+	System.out.println(t2.x + " "+ t2.y+" "+ z);
+	
+}
+}
