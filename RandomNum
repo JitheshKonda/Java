@@ -1,0 +1,11 @@
+import java.util.Random;
+public class RandomNum {
+public static void main (String [] args){
+    RandomNum rand = new RandomNum();
+    System.out.println("Random numbers b/w 1 to 50:");
+    for(int i=0;i<3;i++){
+        int num = rand.nextInt(3);
+        System.out.print(num);
+    }
+}
+}
