@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+class exam{
+public static void main (String[] args){
+ ArrayList<String>list = new ArrayList<>();
+    list.add("Java");
+    list.add("python");
+    list.add("html");
+    list.add("css");
+    list.add("c");
+    System.out.println("list:"+list);
+    list.remove("c");
+    list.add("c++");
+System.out.println("updated list:"+list);
+System.out.println("total list:"+list.size());
+}
+}
