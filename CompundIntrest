@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        double P = 10000;
+        double R = 10;
+        double T = 2;
+        double amount = P * Math.pow(1 + R / 100, T);
+        double CI = amount - P;
+        System.out.println("Compound Interest = " + CI);
+        System.out.println("Amount = " + amount);
+    }
+}
