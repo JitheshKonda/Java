@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int returnedDay = sc.nextInt();
+        int returnedMonth = sc.nextInt();
+        int returnedYear = sc.nextInt();
+        int dueDay = sc.nextInt();
+        int dueMonth = sc.nextInt();
+        int dueYear = sc.nextInt();
+        int fine = 0;
+        if (returnedYear > dueYear) {
+            fine = 10000;
+        }
+        else if (returnedYear == dueYear && returnedMonth > dueMonth) {
+            fine = (returnedMonth - dueMonth) * 500;
+        }
+        else if (returnedYear == dueYear &&
+                 returnedMonth == dueMonth &&
+                 returnedDay > dueDay) {
+            fine = (returnedDay - dueDay) * 15;
+        }
+        System.out.println(fine);
+        sc.close();
+    }
+}
