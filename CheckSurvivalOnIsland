@@ -1,0 +1,21 @@
+class Solution {
+    public int minimumDays(int S, int N, int M) {
+        // code here
+        int totalFood = S * M;
+        
+        if(S >= 7 && N * 6 < M * 7){
+            return -1;
+        }
+        
+        int buyDays = (totalFood + N - 1)/N;
+        
+        int sundays = S/7;
+        int availableDays = S - sundays;
+        
+        if(buyDays > availableDays){
+            return -1;
+        }
+        
+          return buyDays;
+    }
+}
