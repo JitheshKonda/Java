@@ -1,0 +1,9 @@
+import java.io.*;
+
+class Main {
+    public static void main(String[] args)
+    {
+        int rows = 3, cols = 3;
+        int[][] arr = new int[rows][cols];
+    }
+}
